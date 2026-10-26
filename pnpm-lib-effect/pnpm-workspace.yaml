@@ -1,0 +1,20 @@
+packages:
+  - "examples/*"
+  - "packages/*"
+
+catalog:
+  "@effect/vitest": 4.0.6
+  effect: 4.0.6
+  tsdown: ^0.22.14
+  typescript: 7.0.2
+  vitest: ^5.0.5
+
+minimumReleaseAgeExclude:
+  - "@effect/tsgo-darwin-arm64@0.59.0"
+  - "@effect/tsgo-darwin-x64@0.59.0"
+  - "@effect/tsgo-linux-arm64@0.59.0"
+  - "@effect/tsgo-linux-arm@0.59.0"
+  - "@effect/tsgo-linux-x64@0.59.0"
+  - "@effect/tsgo-win32-arm64@0.59.0"
+  - "@effect/tsgo-win32-x64@0.59.0"
+  - "@effect/tsgo@0.59.0"
