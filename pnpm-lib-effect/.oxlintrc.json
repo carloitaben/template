@@ -1,3 +1,18 @@
 {
-  "$schema": "./node_modules/oxlint/configuration_schema.json"
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "jsPlugins": ["./tools/oxlint/effect-namespace-imports.ts"],
+  "rules": {
+    "pnpm-lib-effect/effect-namespace-imports": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "effect",
+            "message": "Import from an Effect subpath, such as effect/Effect or effect/Schema."
+          }
+        ]
+      }
+    ]
+  }
 }

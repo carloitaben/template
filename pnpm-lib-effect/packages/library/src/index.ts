@@ -1,3 +1,3 @@
-import * as Effect from "effect"
+import * as Effect from "effect/Effect"
 
-export const greet = (name: string) => Effect.Effect.succeed(`Hello, ${name}!`)
+export const greet = (name: string) => Effect.succeed(`Hello, ${name}!`)

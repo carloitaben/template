@@ -1,4 +1,4 @@
-import * as Effect from "effect"
+import * as Effect from "effect/Effect"
 import { greet } from "hello-world"
 
-console.log(Effect.Effect.runSync(greet("world")))
+console.log(Effect.runSync(greet("world")))
