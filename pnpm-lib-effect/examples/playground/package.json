@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "effect": "catalog:",
-    "hello-world": "workspace:*"
+    "pnpm-lib-effect": "workspace:*"
   },
   "devDependencies": {
     "typescript": "catalog:"
