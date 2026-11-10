@@ -12,14 +12,15 @@
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check .",
     "lint": "oxlint .",
+    "prepare": "effect-tsgo patch --no-typescript --oxlint",
     "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.31.1",
-    "@effect/tsgo": "0.59.0",
-    "@oxlint/plugins": "1.80.0",
+    "@effect/tsgo": "0.67.7",
     "oxfmt": "^0.65.0",
-    "oxlint": "1.80.0"
+    "oxlint": "1.93.0",
+    "oxlint-tsgolint": "7.0.2006"
   },
   "packageManager": "pnpm@11.13.1"
 }

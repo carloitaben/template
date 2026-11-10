@@ -1,6 +1,16 @@
 {
   "compilerOptions": {
-    "plugins": [{ "name": "@effect/language-service" }],
+    "plugins": [
+      {
+        "name": "@effect/language-service",
+        "diagnosticSeverity": {
+          "preferNamespaceImport": "warning",
+          "unstableApiUsage": "off"
+        },
+        "namespaceImportPackages": ["effect"],
+        "topLevelNamedReexports": "follow"
+      }
+    ],
     "lib": ["ESNext"],
     "target": "ES2022",
     "module": "ESNext",

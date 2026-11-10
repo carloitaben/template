@@ -1,14 +1,17 @@
 {
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "jsPlugins": ["./tools/oxlint/effect-namespace-imports.ts"],
+  "$schema": "./node_modules/@effect/tsgo/oxlint-schema.json",
+  "extends": ["./node_modules/@effect/tsgo/oxlint-presets/recommended.json"],
   "rules": {
-    "pnpm-effect/effect-namespace-imports": "error",
+    "effecttsgo/prefer-barrel-import": "off",
+    "effecttsgo/prefer-namespace-import": "warn",
+    "effecttsgo/unstable-api-usage": "off",
     "no-restricted-imports": [
       "error",
       {
         "paths": [
           {
             "name": "effect",
+            "importNames": ["*"],
             "message": "Import from an Effect subpath, such as effect/Effect or effect/Schema."
           }
         ]
