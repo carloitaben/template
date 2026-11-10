@@ -1,5 +1,11 @@
 {
   "lsp": {
+    "oxlint": {
+      "binary": {
+        "path": "./node_modules/.bin/effect-tsgo",
+        "arguments": ["oxlint", "--lsp"]
+      }
+    },
     "typescript-language-server": {
       "binary": {
         "path": "./node_modules/.bin/effect-tsgo",
@@ -9,19 +15,19 @@
   },
   "languages": {
     "JavaScript": {
-      "language_servers": ["typescript-language-server", "oxfmt"],
+      "language_servers": ["typescript-language-server", "oxlint", "oxfmt"],
       "format_on_save": "on",
       "prettier": { "allowed": false },
       "formatter": { "language_server": { "name": "oxfmt" } }
     },
     "TypeScript": {
-      "language_servers": ["typescript-language-server", "oxfmt"],
+      "language_servers": ["typescript-language-server", "oxlint", "oxfmt"],
       "format_on_save": "on",
       "prettier": { "allowed": false },
       "formatter": { "language_server": { "name": "oxfmt" } }
     },
     "TSX": {
-      "language_servers": ["typescript-language-server", "oxfmt"],
+      "language_servers": ["typescript-language-server", "oxlint", "oxfmt"],
       "format_on_save": "on",
       "prettier": { "allowed": false },
       "formatter": { "language_server": { "name": "oxfmt" } }
